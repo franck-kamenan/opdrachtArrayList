@@ -6,7 +6,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        Collection<Integer> userNumbers = new ArrayList<>();
+        Collection<Integer> userNumbers = new LinkedList<>();
         Scanner keyboard = new Scanner(System.in);
 
         System.out.println("Geef in 5 nummer aub");
