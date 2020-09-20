@@ -21,5 +21,12 @@ public class AppString {
         for (int i = userWords.size() - 1; i >=  0; i--) {
             System.out.println(userWords.get(i));
         }
+
+        System.out.println(userWords.size());
+
+        String sentence = userWords.stream()
+                                   .reduce("", (acc, e) -> acc + e + " ");
+
+        System.out.println(sentence);
     }
 }
