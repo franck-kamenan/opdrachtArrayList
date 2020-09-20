@@ -6,7 +6,7 @@ public class AppString {
 
     public static void main(String[] args) {
 
-        Collection<String> userWords = new ArrayList<>();
+        List<String> userWords = new ArrayList<>();
         Scanner keyboard = new Scanner(System.in);
 
         System.out.println("Geef een zin die eindigd met een punt.");
@@ -18,6 +18,8 @@ public class AppString {
 
         userWords.add(word);
 
-        userWords.forEach(System.out::println);
+        for (int i = userWords.size() - 1; i >=  0; i--) {
+            System.out.println(userWords.get(i));
+        }
     }
 }
