@@ -17,10 +17,10 @@ public class App {
 
         userNumbers.forEach(System.out::println);
 
-        double average = userNumbers.stream()
+        int sum = userNumbers.stream()
                              .mapToInt(e -> e)
-                             .average().getAsDouble();
+                             .sum();
 
-        System.out.println(average);
+        System.out.println(sum);
     }
 }
