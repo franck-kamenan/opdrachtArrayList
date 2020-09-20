@@ -16,5 +16,11 @@ public class App {
         }
 
         userNumbers.forEach(System.out::println);
+
+        double average = userNumbers.stream()
+                             .mapToInt(e -> e)
+                             .average().getAsDouble();
+
+        System.out.println(average);
     }
 }
